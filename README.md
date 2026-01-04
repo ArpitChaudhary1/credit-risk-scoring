@@ -14,11 +14,11 @@ It is a highly biased dataset, with only 17% of the applicants being defaulters 
 ---
 
 ## 📊 Dataset Overview
-Total Records: 2,36,846
-Target Variable: loan_status
-Class 1 (Safe): 1,96,959 (83%)
-Class 0 (Defaulter): 39,887 (17%)
-Features: 36 variables including credit scores, income, loan amounts, and debt-to-income ratios.
+- Total Records: 2,36,846
+- Target Variable: loan_status
+- Class 1 (Safe): 1,96,959 (83%)
+- Class 0 (Defaulter): 39,887 (17%)
+- Features: 36 variables including credit scores, income, loan amounts, and debt-to-income ratios.
 
 ---
 
