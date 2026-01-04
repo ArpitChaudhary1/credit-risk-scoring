@@ -1,3 +1,33 @@
 # Loan Approval System
-wheather loan is approved or rejected
-hello there
+
+## 🎯Mission of the Project
+The objective of the project is to construct a reliable machine learning system for the correct prediction of loan defaulters. In the banking sector, the cost of missing a potential defaulter is far greater than the cost of accidentally rejecting a safe applicant. It compares four different machine learning architectures to find the optimal balance between risk detection (Recall) and operational efficiency (Accuracy/Precision).
+
+---
+
+## 🏦 The Business Problem
+It is a highly biased dataset, with only 17% of the applicants being defaulters (Class 0).
+
+- The Goal: Maximize the detection of Class 0 (Defaulters).
+- The Metric: Our primary focus in Recall is on Class 0 to ensure the bank maintains a minimized loss metric.
+
+---
+
+## 📊 Dataset Overview
+Total Records: 2,36,846
+Target Variable: loan_status
+Class 1 (Safe): 1,96,959 (83%)
+Class 0 (Defaulter): 39,887 (17%)
+Features: 36 variables including credit scores, income, loan amounts, and debt-to-income ratios.
+
+---
+
+## 🛠️ Model Performance Summary
+Each model was tuned using RandomizedSearchCV with a focus on maximizing the recall of the minority class.
+
+```bash
+Model,Class 0 Recall,Class 0 Precision,Accuracy,Key Strategy
+Decision Tree,0.76,0.31,0.67,Highest sensitivity to risk.
+XGBoost,0.71,0.34,0.71,Optimized via weighted log-loss.
+Random Forest,0.71,0.34,0.72,Most stable/robust ensemble.
+Logistic Regression,0.58,0.28,0.65,Baseline linear interpretation.
