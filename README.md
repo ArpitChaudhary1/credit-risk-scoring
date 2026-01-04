@@ -26,7 +26,7 @@ It is a highly biased dataset, with only 17% of the applicants being defaulters 
 Each model was tuned using RandomizedSearchCV with a focus on maximizing the recall of the minority class.
 
 ```bash
-Model            Class 0 Recall     Class 0 Precision         Accuracy        Key Strategy
+Model            Class 0 Recall     Class 0 Precision         Accuracy        About
 Decision Tree         0.76               0.31                   0.67         Highest sensitivity to risk.
 XGBoost               0.71               0.34                   0.71         Optimized via weighted log-loss.
 Random Forest         0.71               0.34                   0.72         Most stable/robust ensemble.
@@ -65,6 +65,13 @@ Logistic Regression   0.69               0.36                   0.74         Bas
 └── README.md                    
 
 ```
+
+---
+
+## ⚙️ Technical Highlights
+- **Imbalance Management**: Leveraged class_weight='balanced', scale_pos_weight, and custom scoring functions (make_scorer).
+- **Hyperparameter Tuning**: Conducted extensive searches via RandomizedSearchCV to optimize depth, leaf size, and ensemble power.
+- **Validation**: All the models have been validated with a n-fold cross validation on 230k+ rows for generalization.
 
 
 
