@@ -26,8 +26,51 @@ Features: 36 variables including credit scores, income, loan amounts, and debt-t
 Each model was tuned using RandomizedSearchCV with a focus on maximizing the recall of the minority class.
 
 ```bash
-Model,Class 0 Recall,Class 0 Precision,Accuracy,Key Strategy
-Decision Tree,0.76,0.31,0.67,Highest sensitivity to risk.
-XGBoost,0.71,0.34,0.71,Optimized via weighted log-loss.
-Random Forest,0.71,0.34,0.72,Most stable/robust ensemble.
-Logistic Regression,0.58,0.28,0.65,Baseline linear interpretation.
+Model            Class 0 Recall     Class 0 Precision         Accuracy        Key Strategy
+Decision Tree         0.76               0.31                   0.67         Highest sensitivity to risk.
+XGBoost               0.71               0.34                   0.71         Optimized via weighted log-loss.
+Random Forest         0.71               0.34                   0.72         Most stable/robust ensemble.
+Logistic Regression   0.69               0.36                   0.74         Baseline linear interpretation.
+```
+
+---
+
+## 📂 Repository Structure
+
+```bash
+.
+├── LogisticRegressionModel                   
+│   ├── LogisticModel.pkl
+│   ├── model_traning.ipynb
+│   └── README.md
+|
+├── Random Forest Model
+│   ├── Randomforest.pkl
+│   ├── randomForest.ipynb
+│   └── README.md
+│   
+├── XGBoost Classifier
+│   ├── XGBoost.ipynb
+│   ├── xgb_model.pkl
+│   └── README.md
+|
+├── decisionTreeCllassifier
+│   ├── DTC.ipynb
+│   ├── loan_decision_tree.pkl
+│   └── README.md
+|
+├── main.py                        
+├── lending_club_cleaned_v1.csv        
+├── requirements.txt             
+└── README.md                    
+
+```
+
+
+
+
+
+
+
+
+
