@@ -7,9 +7,9 @@ Logistic Regression implementation for loan default prediction with regularizati
 **Model Type** : Logistic Regression with balanced class weights
 
 ## Key Parameters:
-**max_iter**: 1000 (initial), 100 (final optimized)
-**class_weight**: 'balanced'
-C: 1/951 (optimized through grid search)
+- **max_iter**: 1000 (initial), 100 (final optimized)
+- **class_weight**: 'balanced'
+- C: 1/951 (optimized through grid search)
 
 **Features Used**: 35 features (all except loan_status)
 **Train-Test Split**: 80-20 ratio (random_state=42)
@@ -58,7 +58,7 @@ prediction = model.predict(new_data_scaled)
 ```
 
 
-##Use Case Recommendations
+## Use Case Recommendations
 **Best For**:
 - Baseline model comparison
 - Applications requiring model interpretability
