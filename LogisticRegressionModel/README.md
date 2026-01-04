@@ -43,8 +43,8 @@ model = joblib.load('LogisticModel.pkl')
 predictions = model.predict(scaled_data)  # Remember to scale
 ```
 2. Critical Requirements
-⚠️ Data Must Be Scaled:
-Logistic Regression requires feature scaling. Always apply StandardScaler before prediction:
+**⚠️ Data Must Be Scaled**:
+- Logistic Regression requires feature scaling. Always apply StandardScaler before prediction:
 ```
 from sklearn.preprocessing import StandardScaler
 
