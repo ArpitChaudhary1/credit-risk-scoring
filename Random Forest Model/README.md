@@ -74,7 +74,32 @@ weighted avg       0.83      0.72      0.76     47370
   - Higher than test accuracy (72%) indicates good generalization
   - No overfitting detected
 
-## How to use model
+## How to use the model
+**1. Load the model**
+```
+import joblib
+
+# Load the saved model
+model = joblib.load('Randomforest.pkl')
+```
+**2. Prepare the new data (Example of one applicant)**
+```
+new_applicant = pd.DataFrame({
+    'income': [50000],
+    'credit_score': [650],
+    'loan_amount': [15000],
+    'debt_to_income': [0.25],
+    # ... add all other features here
+})
+```
+**3. Get the Prediction (0 or 1)**
+```
+prediction = model.predict(new_applicant)
+```
+**Print the Prediction**
+```
+print(f"Prediction: {'Defaulter' if prediction[0] == 0 else 'Safe'}")
+```
 
 
 
