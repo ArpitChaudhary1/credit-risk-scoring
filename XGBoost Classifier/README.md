@@ -3,7 +3,7 @@ XGBoost (eXtreme Gradient Boosting) Classifier implementation for loan default p
 
 ## Training Configuration
 ### Model Type
-XGBoost Classifier with gradient boosting\
+XGBoost Classifier with gradient boosting
 
 **Key Parameters**
 - n_estimators
